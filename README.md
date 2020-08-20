@@ -29,6 +29,6 @@
 3. 图片展示页面从做（咕咕可能性很大）
 
 # 其他
-感谢原作者，但是，愿项目的GitHub地址找不到了，🐶。
+感谢原作者，但是，原项目的GitHub地址找不到了，🐶。
 <br>
 Argon UI: [Github](https://github.com/creativetimofficial/argon-design-system)

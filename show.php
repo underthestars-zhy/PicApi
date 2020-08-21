@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
- <head> 
-  <title>Pic Api</title> 
+ <head>
+  <?php
+  $set = file("set.txt");
+  echo "<title>$set[1]</title> ";
+  echo "<link rel=\"Shortcut Icon\" href=\"$set[2]\">";
+  echo "<link rel=\"Icon\" href=\"$set[2]\" type=\"image/x-icon\">";
+  ?>
   <meta charset="utf-8" /> 
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -14,8 +19,6 @@
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="./assets/css/argon-design-system.css?v=1.2.0" rel="stylesheet" />
-  <link rel="Shortcut Icon" href="https://gitee.com/public_number_13516875622/oss/raw/master/uPic/axuh0-7zc71-001.ico" type="image/x-icon">
-		<link rel="Icon" href="https://gitee.com/public_number_13516875622/oss/raw/master/uPic/axuh0-7zc71-001.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
   <link rel="preload" href="/mustard-ui.min.css" as="style">
@@ -34,7 +37,10 @@ $(document).ready(function() {
 $(function() {
     $("img.lazyload").lazyload()});
 </script> 
-<style>header{background:#11cdef}
+<style>
+<?php
+echo "header{background:$set[5]}"
+?>
 .get-started{background:#43ccc8;border:3px solid #50d0cc}
 *{word-break:break-all}
 .panel img{width:100%}
@@ -43,7 +49,9 @@ $(function() {
   </head>
   <body>
   <header> 
-   <h1 class="display-1 mb-0">Pic Api</h1>
+  <?php
+   echo "<h1 class=\"display-1 mb-0\">$set[4]</h1>"
+   ?>
    <br>
    <h5 class="mb-0">图片一览</h5>
    <div class="btn-wrapper mt-5">

@@ -1,0 +1,6 @@
+<-- 头设置 -->
+PicApi | Show
+https://gitee.com/public_number_13516875622/oss/raw/master/uPic/axuh0-7zc71-001.ico" type="image/x-icon
+<--基础设置 -->
+Pic Api
+#11cdef
